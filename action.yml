@@ -1,4 +1,4 @@
-name: 'Publish Conda'
+name: 'Publish Loop Conda'
 description: 'Build and Publish Conda package to Anaconda'
 author: 'Fatih C Akyon'
 branding:
