@@ -4,7 +4,7 @@ ENV PATH="/root/miniconda3/bin:${PATH}"
 ARG PATH="/root/miniconda3/bin:${PATH}"
 
 RUN apt update
-RUN apt install build-essential 
+RUN apt install -y build-essential 
 
 LABEL "repository"="https://github.com/Loop3D/conda-publish-action"
 LABEL "maintainer"="Yohan de Rose"
