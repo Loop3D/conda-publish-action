@@ -26,7 +26,7 @@ check_if_meta_yaml_file_exists() {
 build_package(){
     # Build for Linux
     conda config --set allow_conda_downgrades true
-    conda build -c conda-forge -c loop3d  -c pytorch -c fcakyon -c districtdatalabs --output-folder . .
+    conda build -c conda-forge -c conda-forge/label/cf202003 -c loop3d  -c pytorch -c fcakyon -c districtdatalabs --output-folder . .
 
     # Convert to other platforms: OSX, WIN
     if [[ $INPUT_PLATFORMS == *"osx"* ]]; then
