@@ -30,10 +30,10 @@ build_package(){
 
     # Convert to other platforms: OSX, WIN
     if [[ $INPUT_PLATFORMS == *"osx"* ]]; then
-    conda convert -p -f osx-64 linux-64/*.tar.bz2
+    conda convert -f -p osx-64 linux-64/*.tar.bz2
     fi
     if [[ $INPUT_PLATFORMS == *"win"* ]]; then
-    conda convert -p -f win-64 linux-64/*.tar.bz2
+    conda convert -f -p win-64 linux-64/*.tar.bz2
     fi
 }
 
