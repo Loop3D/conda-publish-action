@@ -10,7 +10,7 @@ RUN apt install -y build-essential libglu1-mesa-dev freeglut3-dev mesa-common-de
 LABEL "repository"="https://github.com/Loop3D/conda-publish-action"
 LABEL "maintainer"="Yohan de Rose"
 
-RUN conda install -y anaconda-client conda-build conda-verify cython
+RUN conda install -y anaconda-client conda-build conda-verify cython numpy
 
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
